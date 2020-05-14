@@ -12,7 +12,7 @@ you must first choose which version you want
 docker pull mysql:5.7.30
 ```
 
-## review the compose file
+## Review the compose file
 Notice we are create a spec that containes two separate docker containers that we want to talk to eachother on an internal private docker network. Notice we do not not need expose any ports on the database side only the database ui as the ui and database will talk on an internal network. If we want to access the database via jdbc we must expose the containers ports
 ```yaml
 version: '3.1'
@@ -49,6 +49,7 @@ docker ps
 ## Test the database using the ui
 navigate to http://localhost:8080/
 ![login screen](imgs/adminer.PNG)
+
 The database name must match the name of the database service in the compose-file as this becomes like the dns name of the database IP address on the docker internal network
 
 ## Close eveything
