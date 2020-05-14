@@ -27,9 +27,9 @@ services:
       - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: Password1
-      MYSQL_DATABASE: deloitte
-      MYSQL_USER: deloitteuser
-      MYSQL_PASSWORD: deloittepassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: Password1
 
 
   adminer:
